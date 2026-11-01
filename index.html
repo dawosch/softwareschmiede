@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Softwareschmiede.dev</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #1e2023;
+        margin: 0;
+      }
+
+      /* Proportions follow the horizontal logo from the brand package:
+         font-size = 1em, mark height 1.18em, gap 0.6em. */
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.6em;
+        margin: 0;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: min(50px, 5.6vw);
+        line-height: 1;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #ece9e3;
+      }
+
+      .logo-mark {
+        display: block;
+        height: 1.18em;
+        width: auto;
+      }
+
+      .logo-text {
+        /* Cancel the tracking after the last letter so the word stays centred */
+        margin-right: -0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="logo">
+      <img class="logo-mark" src="logo-mark.svg" alt="" width="88" height="64" />
+      <span class="logo-text">Softwareschmiede</span>
+    </h1>
+  </body>
+</html>
